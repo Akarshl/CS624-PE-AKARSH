@@ -1,0 +1,5 @@
+Users interact with the app by adding new cities and countries. For cities, users enter the city name and population. For countries, users provide the country name and its currency. These inputs are collected through TextInput fields in the AddCity and AddCountry components.
+
+Once input is submitted, the app validates the data, creates a city or country object, and updates the respective state arrays. The data is temporarily stored in the app’s state. Navigation functions handle screen transitions, while dynamic rendering ensures the UI reflects state changes. The app uses ScrollView to display lists and conditional rendering to handle empty states.
+
+The app displays a scrollable list of all added cities and countries. If no entries exist, a message is shown. Each list item includes the name and additional details like population or currency.
