@@ -1,0 +1,5 @@
+The user interacts with the app by entering country details through the AddCountry screen. Once added, the user can tap on a listed country to navigate to its detail screen, where landmark information can also be entered via two input fields.
+
+The app uses React Native with stack-based navigation to manage screen transitions. Countries are stored in an array as objects containing country, currency, and landmarks. When a country is tapped, the Country.js screen is loaded using navigation.navigate, passing relevant props. New landmarks are appended to the landmarks array of the selected country through the addLandmark function. The state is updated using React’s component state management, and the screen re-renders accordingly.
+
+The output is a dynamic list of countries and their associated landmarks. Each landmark displays its name and description. Data is shown in a scrollable list and updates live as the user adds entries.
